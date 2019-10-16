@@ -1,104 +1,96 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>JSFiddle &minus; About</title>
-    <style media="screen">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      body {
-        background: #20262E;
-        padding: 0 0 100px;
-        margin: 0;
-        color: #fff;
-        font-size: 14px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
-      }
 
-      p {
-        font-size: 14px;
-        line-height: 22px;
-        padding: 0 0 12px;
-        margin: 0;
-      }
+  <script
+    type="text/javascript"
+    src="/js/lib/dummy.js"
+    
+  ></script>
 
-      section {
-        clear: both;
-      }
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
-      .mCont {
-        width: 650px;
-        margin: 0 auto;
-      }
 
-      *, html, body, button, input, textarea, select {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
+  <style id="compiled-css" type="text/css">
+      * {
+    font-family: Arial, 'Sans Serif';
+}
+h2 {
+    color: darkpurple;
+}
+#aDiv{
+    background-color: purple;
+}
+p {
+    color: #20561E;
+}
+.myClass {
+    font-size: smaller;
+    border: 1px solid black;
+    padding: 10px;
+}
+  </style>
 
-      ul, li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
 
-      li {
-        float: left;
-        width: 25%;
-        text-align: center;
-      }
+  <!-- TODO: Missing CoffeeScript 2 -->
 
-      h1, h2, h3, h3 span {
-        font-weight: 200;
-      }
+  <script type="text/javascript">//<![CDATA[
 
-      h1 {
-        margin: 100px 0 20px;
-        font-size: 30px;
-        font-weight: 700;
-      }
+    window.onload=function(){
+      
+    
+     function myclick(){
+    alert("myclick")
+    }
 
-      h2 {
-        font-size: 12px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.3);
-        padding: 40px 0 15px;
-        margin: 0;
-      }
 
-      h3 {
-      }
 
-      h3 span {
-        color: #a3a7a8;
-        font-size: 13px;
-        display: block;
-        margin-top: 5px;
-      }
+    }
 
-      a {
-        color: #0084ff;
-        text-decoration: none;
-      }
+  //]]></script>
 
-      a:hover {
-        text-decoration: underline;
-      }
+</head>
+<body>
+    <h2>About Me!</h2>
 
-      img {
-        overflow: hidden;
-        border-radius: 120px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="mCont">
-      <h1>404</h1>
+<p>I am William</p>
 
-      <section>
-        <p>That page doesn't exist.</p>
-      </section>
-    </div>
-  </body>
+<div id="aDiv"></div>
+
+<p class="myClass">I am a human</p>
+
+<div id="BDiv"></div>
+
+<input value="press" type="button" onclick="myclick()">
+
+<div class="link-button-wrapper"> 
+    <a href="https://www.google.com">
+        <h1>Button!</h1>
+    </a>
+</div>
+ 
+ 
+
+  
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: ""
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+</body>
 </html>
