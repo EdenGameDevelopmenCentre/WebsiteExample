@@ -1,0 +1,17 @@
+*{
+    font-family: Arial, 'Sans Serif';
+}
+h2 {
+    color: darkpurple;
+}
+#aDiv{
+    background-color: purple;
+}
+p {
+    color: #20561E;
+}
+.myClass {
+    font-size: smaller;
+    border: 1px solid black;
+    padding: 10px;
+}
